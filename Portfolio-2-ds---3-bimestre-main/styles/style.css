@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --cor-primaria: #031926;
+  --cor-secundaria: #c1c9cd;
+  --cor-terciaria: #eadacd;
+  --cor-botao: #3fa9f5;
+  --cor-botao-hover: #1c8cd5;
+  --cor-hover: #02243d;
+
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--cor-primaria);
+  flex: 1 1 100vw;
+  color: var(--cor-secundaria);
+  margin: 3px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 100vw;
+  padding: 1rem 4rem 1rem 4rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 40px;
+}
+
+.cabecalho__menu__link {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.225rem;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cabecalho__menu__link:hover {
+  transform: scale(1.1);
+}
+
+.fotografia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.150rem;
+  width: 7%;
+  height: auto;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cabecalho__texto {
+  text-align: center;
+  font-size: 0.600rem;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+}
+
+.cabecalho__texto h1 {
+  padding-bottom: 0.500rem;
+}
+
+.extras {
+  flex: 2 1 200px;
+}
+
+.extras p {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-terciaria);
+  font-size: .7rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 44px;
+}
+
+.logo-rede-social {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo-rede-social:hover {
+  transform: scale(1.1);
+}
+
+.apresentacao {
+  display: flex;
+  flex: 30 1 500px;
+  padding: 4% 10% 4% 10%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.sobre {
+  padding: 0% 10% 0% 10%;
+  font-family: var(--fonte-primaria);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sobre h2 {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.sobre p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.habilidades {
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cor-primaria);
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+}
+
+.habilidades h2 {
+  color: var(--cor-secundaria);
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.habilidades-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.habilidades-box {
+  background-color: var(--cor-hover);
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
+  width: 15.625rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  vertical-align: top;
+}
+
+.habilidades-container .habilidades-box {
+  background: var(--cor-hover);
+  text-align: center;
+  border: 0.125rem solid var(--cor-botao);
+  transition: 0.5s ease;
+}
+
+.habilidades-container .habilidades-box:hover {
+  border-color: var(--cor-botao-hover);
+  transform: scale(1.02);
+}
+
+.habilidades-container h3 {
+  color: var(--cor-secundaria);
+  font-size: 1rem;
+  margin: 0.9375rem 0;
+}
+
+.habilidades-logo {
+  width: 3.125rem;
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+.projetos {
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cor-primaria);
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+}
+
+.projetos h2 {
+  color: var(--cor-secundaria);
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.projetos-container {
+  display: inline-block;
+  background-color: var(--cor-hover);
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
+  margin: 0.625rem;
+  width: 15.625rem;
+  min-height: 15.625rem;
+  border: 0.125rem solid var(--cor-botao);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease;
+  vertical-align: top;
+}
+
+.projetos-container:hover {
+  transform: scale(1.02);
+}
+
+.projetos-container h3,
+.projetos-container p {
+  color: var(--cor-secundaria);
+  font-size: 1rem;
+  margin: 0.9375rem 0;
+}
+
+.projetos-container a {
+  display: inline-block;
+  background-color: var(--cor-botao);
+  color: var(--cor-secundaria);
+  padding: 0.625rem 0.625rem;
+  margin-top: auto;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.projetos-container a:hover {
+  background-color: var(--cor-botao-hover);
+  box-shadow: 0 0 0.9375rem var(--cor-botao-hover);
+}
+
+.rodape {
+  flex: 1 1 100vw;
+  color: var(--cor-terciaria);
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 2rem 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media (max-width: 768px) {
+
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .fotografia {
+    order: 1;
+  }
+
+  .cabecalho__texto {
+    order: 2;
+  }
+
+  .cabecalho__menu {
+    order: 3;
+  }
+
+  .cabecalho__menu {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .fotografia {
+    width: 30%;
+  }
+
+  .cabecalho__texto h1 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .cabecalho__texto p {
+    font-size: 1rem;
+  }
+
+  .apresentacao {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .extras {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+
+  .habilidades-box {
+    width: 100%;
+    max-width: 300px;
+  }
+
+
+  .projetos-container {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    max-width: 350px;
+  }
+
+
+  .rodape {
+    font-size: 0.875rem;
+    padding: 1rem 0;
+  }
+}
